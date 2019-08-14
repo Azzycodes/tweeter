@@ -1,0 +1,20 @@
+nav {
+  font-family: "Bungee", "sans-serif";
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: auto;
+  background-color: #4056a1;
+  color: #FFFFFF;
+}
+
+.title {
+
+  line-height: 140px;
+  margin-left: 40px;
+  font-size: 40px;
+}
+
+.create {
+float: right;
+}
