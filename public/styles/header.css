@@ -1,0 +1,17 @@
+header {
+  height: 500 px;
+  width: 100%;
+  /* position: relative; */
+  /* justify-content: center; */
+  text-align: center;
+  background-color: rgb(223, 134, 19);
+  padding-top: 150px;
+  background-image: url("../images/asfalt-dark.png");
+
+};
+#tweeterHeaderPic {
+  /* padding-top: 100 px; */
+  justify-content: center;
+  text-align: center;
+  
+};
