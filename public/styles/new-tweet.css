@@ -1,0 +1,35 @@
+new-tweet {
+  position: relative;
+  width: 100%;
+  }
+  
+  .new-tweet h2 {
+    color: #1a568f;
+    font-family: "Bungee", cursive, sans-serif
+  
+  }
+  
+  .new-tweet textarea {
+    color: #1a568f;
+    width: 100%;
+    border-top: 0;
+    border-bottom: solid black 5px;
+    border-right: 0;
+    border-left: 0;
+    background-color: transparent;
+  }
+  
+  .new-tweet input {
+    font-family: "Bungee", cursive, sans-serif;
+    background-color: transparent;
+    color: #1a568f;
+    text-align: right;
+  
+  }
+  
+  .new-tweet .counter {
+    font-family: "Bungee", cursive, sans-serif;
+    color: darkslategray;
+    float: right;
+  
+  }
