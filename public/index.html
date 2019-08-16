@@ -3,37 +3,66 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300i,700i&display=swap" rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" >
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" >
     <link rel="stylesheet" href= "/styles/nav.css" type="text/css" />
-
-
+    <link rel="stylesheet" href="/styles/tweets-container.css" tyle="text/css"/>
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+
+  </head>
   <body>
 
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+    <nav class="navbar">
+        <span class= "title">tweeter</span>
+        <span class="compose-tweet">
+          <span class="create"><b>Write</b> a new tweet
+          <div class="toggle"><img src="/images/down-arrow.png" class="toggle-pic"></div>
+        </span>                
+      </nav>
+
+      <header class="header">      
+      <div>
+          <img id="tweeterHeaderPic" src="/images/profile-hex.png"> 
+        </div>
+      <br>
+      <div>
+          <span><b>Azzam</b> Athar</span>
+      </div>
+  </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+        <section class="new-tweet">
+            <span class="error-msg">
+                <img class="alert" src="/images/error.png">
+                <p>Need the right amount of text to fire this tweet!</p>
+              </span>
+            <form id="create-tweet">
+              <textarea name="text" placeholder="What are you humming about?"></textarea>
+              <input type="submit" value="Tweet">
+              <span class="counter">140</span>
+            </form>
+          </section>
+          <section class ="container-of-posts"></section>
     </main>
-
   </body>
 </html>
