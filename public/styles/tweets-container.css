@@ -1,0 +1,50 @@
+.tweets {
+  border: 5px solid rgb(28, 95, 157);
+  padding: 15px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.user {
+  float: left;
+  margin-left: 20px
+}
+
+.handle {
+  float: right;
+  opacity: 0;
+}
+
+.tweets .tweet-text {
+  text-align: left;
+  margin-top: 65px;
+  padding: 15px;
+}
+
+.tweets header img {
+  float: left;
+}
+
+.tweets footer hr {
+  border: 2px solid #1A568F;
+  margin: 0;
+}
+
+.tweets footer time {
+  font-size: .9rem;
+} 
+
+.tweets footer .action-buttons {
+  float: right;
+}  
+
+.tweets:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 2px rgba(0, 0, 232, 0.2);
+}
+
+.tweets:hover * {
+  opacity: .9;
+  font-weight: bold;
+}
+
