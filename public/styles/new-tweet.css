@@ -3,33 +3,34 @@ new-tweet {
   width: 100%;
   }
   
-  .new-tweet h2 {
-    color: #1a568f;
-    font-family: "Bungee", cursive, sans-serif
-  
-  }
-  
   .new-tweet textarea {
-    color: #1a568f;
     width: 100%;
-    border-top: 0;
+    border: 0;
     border-bottom: solid black 5px;
-    border-right: 0;
-    border-left: 0;
-    background-color: transparent;
+    background: transparent;
   }
   
   .new-tweet input {
     font-family: "Bungee", cursive, sans-serif;
-    background-color: transparent;
-    color: #1a568f;
+    background-color: #1a568f;
+    color: white;
     text-align: right;
-  
+    cursor: pointer;
   }
   
-  .new-tweet .counter {
+  .counter {
     font-family: "Bungee", cursive, sans-serif;
     color: darkslategray;
     float: right;
-  
   }
+  
+  .error-msg {
+  border: 2px solid red;
+  padding: 5px;
+  color: red;
+  display: flex;
+}
+
+.error {
+  color: red;
+}
