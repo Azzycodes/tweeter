@@ -24,8 +24,7 @@ new-tweet {
   float: right;
   }
   
-.error-msg {
-  border: 2px solid red;
+.error-msg-span {
   padding: 5px;
   color: red;
   display: flex;
