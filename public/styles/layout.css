@@ -19,9 +19,40 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
-
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Used to make responsive CSS */
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .header {
+    flex-basis: 50%;
+    margin: 250px 50px auto 50px;
+    max-width: 200%;
+  }
+
+  .container {
+    margin: 180px 30px auto 50px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .compose-tweet {
+    font-size: 40px;
+  }
+
+} 
