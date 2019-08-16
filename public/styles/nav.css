@@ -1,20 +1,49 @@
 nav {
-  font-family: "Bungee", "sans-serif";
+  font-family: "Bungee", cursive, sans-serif;
   height: 120px;
+  padding: 1.5em;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: auto;
   background-color: #4056a1;
   color: #FFFFFF;
+  display:flex;
+  justify-content: space-between;
 }
 
 .title {
-
-  line-height: 140px;
-  margin-left: 40px;
-  font-size: 40px;
+  margin-left: 10px;
+  float: left;
+  font-size: 2rem;
 }
 
-.create {
-float: right;
+.compose-tweet {
+  float: right;
+  color: #FFFFFF;
+  z-index: auto;
+  font-size: 2rem;
+}
+
+/* toggle button animation */ 
+@keyframes MoveUpDown {
+ 0%, 100% {
+   bottom: 0;
+ }
+ 50% {
+   bottom: 20px;
+ }
+}
+
+.toggle {
+  text-align: center;
+   animation: MoveUpDown 1s linear infinite;
+   position: relative;
+   margin-top: .5em;
+  }
+
+.toggle-pic {
+ height: 30px;
+ width: 30px;
+ cursor: pointer;
 }
