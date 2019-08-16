@@ -9,7 +9,7 @@ $(document).ready(function() {
   $(".toggle-pic").click(function() {
     $(".new-tweet").slideToggle();
   });
-  $(".error-msg").hide();
+  $(".error-msg-span").hide();
 });
 
 //Hides compose tweet box on page load
@@ -77,18 +77,18 @@ $(document).ready(function() {
     event.preventDefault();
     //error alerts for not meeting character requirments
     if (($("textarea").val()).length === 0) {
-      $(".error-msg-span").text("<p>Need some text to fire this tweet!</p>");
-      $(".error-msg").slideDown();
+      $(".error-msg-text").html("<p>Need some text to fire this tweet!</p>");
+      $(".error-msg-span").slideDown();
     } else if (($("textarea").val()).length > 140) {
-      $(".error-msg-span").text("<p>Too long of a tweet!</p>");
-      $(".error-msg").slideDown();
+      $(".error-msg-text").html("<p>Too long of a tweet!</p>");
+      $(".error-msg-span").slideDown();
     } else {
+      $(".error-msg-span").slideUp();
       $.ajax("/tweets", {
         method: "POST",
         data: $(this).serialize()
       })
         .then(function(data) {
-          $(".error-msg").slideUp();
           $("textarea").val("");
           $(".counter").text(140);
           loadtweets(renderTweets);
