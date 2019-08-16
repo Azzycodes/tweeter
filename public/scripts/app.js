@@ -4,6 +4,18 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+//allows to click arrow button to enable tweet creation
+$(document).ready(function() {
+  $(".toggle-pic").click(function() {
+    $(".new-tweet").slideToggle();
+  });
+  $(".error-msg").hide();
+});
+
+//Hides compose tweet box on page load
+$(window).load(function() {
+  $(".new-tweet").css({ display: "none" });
+});
 
 //prevents user(s) to input code in as tweets
 const escape =  function(str) {
