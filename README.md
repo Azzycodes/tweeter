@@ -15,3 +15,15 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+Tweeter viewed on a desktop
+!["Screenshot of the tweet box and tweets on a desktop screen"](https://github.com/Azzycodes/tweeter/blob/master/public/images/ScreenGrab.png?raw=true)
+
+Tweeter viewed on a tablet
+!["Screenshot of some more tweets"](https://github.com/Azzycodes/tweeter/blob/master/public/images/ResponsiveScreenGrab.png?raw=true)
+
+
+!["Screenshot of the app as viewed by a tablet"](https://github.com/Azzycodes/tweeter/blob/master/public/images/desktopScreenGrab.png?raw=true)
+
